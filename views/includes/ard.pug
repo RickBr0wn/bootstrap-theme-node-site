@@ -1,0 +1,8 @@
+.container
+  h1
+    | DHT11 Temperature and Humidty Sensor Demonstration
+  h6.text-muted  
+    p
+      | Using johnny-five to connect to the arduino board. Node.js then creates a web server, and when the browser connects (using socket.io : port 3000) node.js passes the incoming data into a line graph, created using chart.js. Mulitple frameworks combining well. 
+    canvas#myChart(height="600", width="1000")
+    script(rel="text/javascript" src="/javascript/chart.js")

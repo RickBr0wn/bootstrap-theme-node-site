@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="description", content="")
+		meta(name="author", content="")
+		title #{title}
+		link(rel="stylesheet", href="/stylesheets/style.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.0/Chart.js")
+		script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js", integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh", crossorigin="anonymous")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb", crossorigin="anonymous")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js", integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ", crossorigin="anonymous")
+	body
+		header
+			#navbarHeader.collapse.bg-dark
+				.container
+					.row
+						.col-sm-8.py-4
+							h4.text-white About Me
+							p.text-muted
+								| Hi, I'm Rick Brown! 
+							p.text-muted
+								| I am a self-taught 'in-progress' javascript developer, with loads more to learn. I am actively using both FreeCodeCamp and TreeHouse to continue my learning. Currently learning node.js. This 'test' web server has been created to allow me to practise what I am learning! Please feel free to contact me!!!
+						.col-sm-4.py-4
+							h4.text-white Contact Me
+							ul.list-unstyled
+								li
+									a.text-white(href="https://twitter.com/riQeh_") Follow on Twitter
+								li
+									a.text-white(href="https://www.facebook.com/riQeh") Like on Facebook
+								li
+									a.text-white(href="https://github.com/RickBr0wn") Follow on GitHub
+			.navbar.navbar-dark.bg-dark
+				.container.d-flex.justify-content-between
+					a.navbar-brand(href="/") RiCK BROWN
+					button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarHeader", aria-controls="navbarHeader", aria-expanded="false", aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+		block content
+		include includes/footer.pug
+
+
